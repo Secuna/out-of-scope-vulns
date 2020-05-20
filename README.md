@@ -1,2 +1,66 @@
-# out-of-scope-vulns
-List of Out-of-Scope vulnerabilities
+# Out-of-Scope-vulns
+
+## General (Including Web App)
+
+- Missing SPF, DMARC, or DKIM records
+- Password, email, and account policies such as Dispostable Emails, Password Complexity, Password Expiration
+- Email address change doesn’t require verification
+- Password reset tokens don’t expire when changing email address
+- Session in other browser doesn’t terminate after changing password or email address
+- Session fixation / expiration / replay attacks (session cookie is valid after sign out)
+- Absence of Cross-Site Request Forgery (“CSRF”) token in non-critical processes, this includes Login and Logout CSRF
+- Attacks requiring physical access to a user's device
+- Vulnerabilities that require a potential victim to install non-standard software or otherwise take active steps to make themselves be susceptible
+- Social engineering of our employees, clients or users
+- Any physical attempts against our property or data centers
+- Missing auto-complete attributes on html forms
+- Missing HttpOnly and Secure flag set on non-sensitive cookies
+- Any access to data where the targeted user needs to be operating a rooted mobile device
+- Missing security headers which do not lead directly to a vulnerability
+- Host or Referrer header injections without a specific or demonstrable impact
+- Reports from automated tools or scans that haven't been manually validated
+- Presence of banner or version information unless correlated with a vulnerable version
+- UI and UX bugs and spelling mistakes
+- Distributed Denial of Service (“DDOS”) or Denial of Service (“DOS”)
+- ClickJacking without working proof of concept. Limited to 1 user-interaction only, mostly clicking a button that could affect the Confidentiality, Integrity, and Availability
+- Tabnabbing
+- Missing Best Practices
+- Hypothetical or Theoretical vulnerabilities without actual verification or validation
+- Vulnerabilities attributable to out-of-date browsers or platforms
+- Unsafe SSL/TLS cipher suites or protocol version
+- Lack of HSTS mechanism on client or server side
+- Content or Text Injection
+- Exposure of API keys with no security impact (Google Maps API keys etc.)
+- Self-XSS (Self-Cross Site Scripting)
+- DNSSEC
+- CSV/Formula Injection
+- Flash-based Exploits
+- EXIF data on uploaded images
+- HTTP OPTIONS/TRACE methods enabled
+- Mixed Content Warnings
+- Exposed IP Addresses
+- Bypass of URL malware detection
+- Path Disclosure uncless chained with LFI
+- Directory Listing of non-critical directories or files
+- Use of a known vulnerable library (without proof of exploitability)
+- Lack of crossdomain.xml, p3p.xml, robots.txt or any other policy files and/or wildcard. presence/misconfiguration in these
+- Exposed .htaccess without any sensitive information nor impact
+- Reports of credentials exposed by other data breaches / known credential lists
+- Hyperlink injection in emails
+- Usage of HS256 algorithm in JWT
+- Reflected File Download (RFD)
+- Email/SMS flooding attacks
+- Publicly accessible admin login panels
+- Open ports without an accompanying proof-of-concept demonstrating vulnerability
+- Brute-force and rate-limiting attacks
+- Spamming
+- Captcha bypass using OCR
+- Data enumeration via registration or account recovery forms (E.g.: Email, Username, or Mobile Number registered already)
+- Domain spoofing
+- Missing Maximum Length in Input Fields
+
+## Mobile App
+- Lack of obfuscation in mobile apps
+- Absence of certificate pinning
+- Lack of jailbreak detection in mobile apps
+- Lack of binary protection control in an app
