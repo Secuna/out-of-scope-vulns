@@ -40,7 +40,7 @@
 - Mixed Content Warnings
 - Exposed IP Addresses
 - Bypass of URL malware detection
-- Path Disclosure uncless chained with LFI
+- Path Disclosure unless chained with LFI
 - Directory Listing of non-critical directories or files
 - Use of a known vulnerable library (without proof of exploitability)
 - Lack of crossdomain.xml, p3p.xml, robots.txt or any other policy files and/or wildcard. presence/misconfiguration in these
